@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BMO Arcade</title>
+    <link rel="stylesheet" href="css/juego.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <!-- Modal de ganador-->
+    <div id="miModal" class="modal">
+      <div class="flex" id="flex"></div>
+      <div class="contenido-modal">
+        <div class="modal-header">
+          <h2 id="felicitaciones">felicitaciones!!!</h2>          
+        </div>
+        <div class="modal-body">
+          <p>Completaste el juego perfectamente</p>
+        </div>
+        <div class="modal-footer">
+          <h3 id="modalH3">Presiona 'mezclar piezas' para volver a jugar</h3>
+          <span class="close" id="close">&times</span>
+        </div>
+      </div>
+    </div>
+    <!--Final del modal-->
+    <div class="col-40">
+    
+      <div id="titulo">
+        <h1>Rompecabezas</h1>
+      </div>
+      <div id="instrucciones">
+        <p>Estas son las instrucciones del juego</p>
+        <ul id="lista-instrucciones">
+
+        </ul>
+      </div>
+      <div id="objetivo">
+        <p>objetivo final</p>
+        <img src="./images/final.png" alt="resultado final">
+        <div class="texto-centrado">
+   
+        </div>
+      </div>
+      <div id="ultimo-mov">
+        <div id="flecha" class="texto-centrado">
+          
+        </div>
+      </div>
+      
+    </div>
+    <div class="col-60">
+      <div id="juego">
+        <!-- contenedor de rompecabezas-->
+        
+         <div  id="pieza1" class="piezasDelJuego" ><img src="./images/10.jpg" alt="pikachu-parte1" ></div>
+         <div  id="pieza2" class="piezasDelJuego" ><img src="./images/20.jpg" alt="pikachu-parte2" ></div>
+         <div  id="pieza3" class="piezasDelJuego" ><img src="./images/30.jpg" alt="pikachu-parte3" ></div>
+         <div  id="pieza4" class="piezasDelJuego" ><img src="./images/40.jpg" alt="pikachu-parte4" ></div>
+         <div  id="pieza5" class="piezasDelJuego" ><img src="./images/50.jpg" alt="pikachu-parte5" ></div>
+         <div  id="pieza6" class="piezasDelJuego" ><img src="./images/60.jpg" alt="pikachu-parte6" ></div>
+         <div  id="pieza7" class="piezasDelJuego" ><img src="./images/70.jpg" alt="pikachu-parte7" ></div>
+         <div  id="pieza8" class="piezasDelJuego" ><img src="./images/80.jpg" alt="pikachu-parte8" ></div>
+         <div  id="pieza9" class="piezasDelJuego" ><img src="./" alt=""></div>
+        
+      </div>
+    </div>
+          <a href="#" id="reiniciar">Mezclar piezas</a>
+    <div id="footer">
+
+    </div>
+    
+    <script src="js/juego.js"></script>
+  </body>
+</html>

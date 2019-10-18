@@ -1,0 +1,174 @@
+/*Código armado por La Foca Loca S.A. No modificar*/
+
+body {
+  font-family: Arial, sans-serif;
+  width: 940px;
+  margin: 5% auto;
+  min-height: 100%;
+  background-image: url(../images/adventure.jpg);
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+li {
+  padding: 5px 0;
+  animation: fadein 5s;
+}
+
+li::before {
+  content: "• ";
+  color: #EC6778;
+}
+
+.col-40 h1 {
+  font-size: 20px;
+  color: #E84A5F;
+}
+
+.col-40, .col-60 {
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+}
+
+.col-40 {
+  background: #FFF;
+  padding: 30px;
+  color: #000;
+}
+
+.col-60 {
+  background: #E84A5F;
+}
+
+#flecha {
+  font-size: 80px;
+}
+
+#objetivo img {
+  width: 250px;
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+#juego {
+  text-align: center;
+  animation: fadein 2s;
+  width: 600px;
+  height: 600px;
+  background-color: red;
+}
+
+div img {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  padding: 7px;
+  width: 99%;
+  border: 1px solid rgb(11, 12, 17);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+a :hover {
+  background: #000;
+  color: rgb(255, 255, 255);
+  border: 1px solid #000;
+}
+
+
+
+/*modal de ganador*/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.425);
+}
+
+.contenido-modal {
+  position: relative;
+  background-color: #dfddddb7;
+  margin: auto;
+  width: 30%;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+  animation-name: modal;
+  animation-duration: 1s;
+}
+
+@keyframes modal {
+  from {
+    top: -330px;
+    opacity: 0;
+  }
+  to {
+    top: 50px;
+    opacity: 1;
+  }
+}
+
+.close {
+  color: #5f688f;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close:hover {
+  color: #7f8c8d;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header, .modal-footer {
+  padding: 8px 16px;
+  background: #84e9cbda;
+  text-align: center;
+}
+
+#felicitaciones {
+  font-size: 60px;
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+  color: rgb(234, 237, 238);
+}
+
+.modal-body p {
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2em;
+}
+
+#modalH3 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+.modal-body {
+  padding: 20px 16px;
+}
